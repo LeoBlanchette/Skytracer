@@ -29,6 +29,6 @@ sudo apt update
 sudo apt install tor deb.torproject.org-keyring 
 sudo apt install tor 
 
+sudo cp -f configfiles/torrc /etc/tor/torrc
 
-
-
+sudo systemctl restart tor
