@@ -1,0 +1,6 @@
+[Unit]
+Description=skytracer socket
+[Socket]
+ListenStream=/run/skytracer.sock
+[Install]
+WantedBy=sockets.target

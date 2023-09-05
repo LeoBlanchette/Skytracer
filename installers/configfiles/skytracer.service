@@ -1,0 +1,17 @@
+[Unit]
+Description=skytracer daemon
+Requires=skytracer.socket
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory={REPLACEHOME}/Skytracer/skytracer
+ExecStart={REPLACEGUNICORN} \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/skytracer.sock \
+          skytracer.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
