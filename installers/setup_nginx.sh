@@ -3,7 +3,7 @@
 echo Setting up NGINX Site...
 
 REPLACEHOME=~
-REPLACEONIONSITE=$(../Bin/./gethostname )
+REPLACEONIONSITE=$($HOME/Skytracer/Bin/./gethostname )
 
 echo $REPLACEONIONSITE
 
