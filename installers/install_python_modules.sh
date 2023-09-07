@@ -6,7 +6,7 @@ echo Installing python modules...
 #Gunicorn https://gunicorn.org/
 #Open CV https://opencv.org/ https://pypi.org/project/opencv-python/
 
-pip install \
+sudo pip install \
 Django \
 gunicorn \
 opencv-python \
