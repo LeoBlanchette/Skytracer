@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+echo Setting up services to run on boot...
+
+sudo systemctl enable nginx
+sudo systemctl enable tor
+sudo systemctl enable skytracer
+

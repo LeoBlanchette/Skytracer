@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+: ' 
+Tor allows us to instantaniously deploy a website without using a paid registrar. 
+Skytracer nodes can also benefit from the anonyminity that tor generally provides. 
+'
+
+
 # Install Tor 
 # https://support.torproject.org/apt/tor-deb-repo/
 echo Installing Tor... 

@@ -10,3 +10,4 @@ installers/./install_python_modules.sh
 #general setup
 installers/./setup_gunicorn.sh
 installers/./setup_nginx.sh
+installers/./setup_services.sh
