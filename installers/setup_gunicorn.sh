@@ -17,6 +17,5 @@ sudo sed -i 's|{REPLACEUSER}|'"${USER}"'|g' /etc/systemd/system/skytracer.servic
 sudo systemctl daemon-reload
 sudo systemctl start skytracer.socket
 sudo systemctl enable skytracer.socket
-sudo systemctl status skytracer.socket
 
 
