@@ -29,12 +29,12 @@ https://deb.torproject.org/torproject.org \
 $RELEASE_CODENAME main | sudo tee -a /etc/apt/sources.list.d/tor.list
 
 sudo wget -qO- https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc \
-| gpg --dearmor | tee /usr/share/keyrings/tor-archive-keyring.gpg >/dev/null
+| gpg --dearmor | sudo tee /usr/share/keyrings/tor-archive-keyring.gpg >/dev/null
 
 sudo apt update
 sudo apt install tor deb.torproject.org-keyring 
 sudo apt install tor 
 
-sudo cp -f configfiles/torrc /etc/tor/torrc
+sudo cp -f $HOME/Skytracer/installers/configfiles/torrc /etc/tor/torrc
 
 sudo systemctl restart tor
