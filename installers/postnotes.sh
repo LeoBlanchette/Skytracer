@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-
-HOSTNAME=$($HOME/Skytracer/Bin/./gethostname)
+HOSTNAME=$($SKYTRACER_HOME/bin/./gethostname)
 echo ""; echo ""; 
 
 echo "Remember, The Tor browser is required to view Onion sites:"

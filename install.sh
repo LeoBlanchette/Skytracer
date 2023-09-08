@@ -4,6 +4,10 @@ echo Installing Skytracer...
 sudo apt update
 sudo apt upgrade
 
+#Set up global variables
+SCRIPT=$(readlink -f "$0")
+export SKYTRACER_HOME=$(dirname "$SCRIPT")
+
 #Main installations...
 installers/./install_main_dependencies.sh
 installers/./install_tor.sh

@@ -2,14 +2,14 @@
 
 echo Setting up NGINX Site...
 
-REPLACEHOME=~
-REPLACEONIONSITE=$($HOME/Skytracer/Bin/./gethostname )
+REPLACEHOME=$SKYTRACER_HOME
+REPLACEONIONSITE=$($SKYTRACER_HOME/bin/./gethostname )
 
 echo $REPLACEONIONSITE
 
 sudo sed -i 's|# server_names_hash_bucket_size 64|'"server_names_hash_bucket_size 512"'|g' /etc/nginx/nginx.conf
 
-sudo cp -f $HOME/Skytracer/installers/configfiles/nginx-default /etc/nginx/sites-available/onionsite
+sudo cp -f $SKYTRACER_HOME/installers/configfiles/nginx-default /etc/nginx/sites-available/onionsite
 
 sudo sed -i 's|{REPLACEONIONSITE}|'"${REPLACEONIONSITE}"'|g' /etc/nginx/sites-available/onionsite
 

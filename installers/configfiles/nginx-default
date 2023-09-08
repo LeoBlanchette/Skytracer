@@ -10,10 +10,10 @@ server {
     }
 
     location  /static/ {
-        root {REPLACEHOME}/Skytracer/skytracer/static;
+        root {REPLACEHOME}/skytracer/static;
     }
 
     location  /media/ {
-        root {REPLACEHOME}/Skytracer/skytracer;
+        root {REPLACEHOME}/skytracer/media;
     }
 }
