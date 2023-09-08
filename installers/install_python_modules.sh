@@ -11,7 +11,7 @@ python3 -m venv $SKYTRACER_HOME
 
 echo "Activating virtual environment..."
 
-source $SKYTRACER_HOME/bin/activate
+source $SKYTRACER_HOME/bin/./activate
 
 echo Installing python modules...
 
