@@ -26,9 +26,8 @@ SECRET_KEY = 'django-insecure-en)()+=vl9eyijw@hv9+%im5@(6_l9#rkrkghfexhu4f&u81q#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 ALLOWED_HOSTS.append(onionsite.host)
-print(ALLOWED_HOSTS)
 
 # Application definition
 
