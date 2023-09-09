@@ -19,5 +19,6 @@ pip install \
 Django \
 gunicorn \
 opencv-python \
+pyzmq \
 
 cp -f $SKYTRACER_HOME/installers/configfiles/gethostname $SKYTRACER_HOME/bin/gethostname

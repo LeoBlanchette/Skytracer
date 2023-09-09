@@ -1,0 +1,13 @@
+[Unit]
+Description=skytracer camera controller
+After=multi-user.target
+
+[Service]
+User={REPLACEUSER}
+Group=www-data
+Type=simple
+Restart=always
+ExecStart={REPLACEPYTHON} {REPLACESCRIPT}
+
+[Install]
+WantedBy=multi-user.target
