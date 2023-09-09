@@ -1,0 +1,3 @@
+# the cron job that captures a skytracer image every minute.
+
+* * * * * {REPLACEUSER} {REPLACEPYTHON} {REPLACESCRIPT}

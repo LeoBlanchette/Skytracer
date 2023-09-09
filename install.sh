@@ -17,6 +17,7 @@ installers/./install_python_modules.sh
 installers/./setup_gunicorn.sh
 installers/./setup_nginx.sh
 installers/./setup_camera.sh
+installers/./setup_camera_cron.sh
 installers/./setup_services.sh
 
 #Post notes...
