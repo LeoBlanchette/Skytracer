@@ -17,16 +17,4 @@ sudo sed -i 's|{REPLACEHOME}|'"${REPLACEHOME}"'|g' /etc/nginx/sites-available/on
 
 sudo ln -s -f /etc/nginx/sites-available/onionsite /etc/nginx/sites-enabled/onionsite
 
-#create directory for web files...
-
-mkdir -p $SKYTRACER_HOME/.skytracer_web 
-
-mkdir -p $SKYTRACER_HOME/.skytracer_web/static 
-
-mkdir -p $SKYTRACER_HOME/.skytracer_web/media 
-
-
-sudo sed -i 's|{SKYTRACER_HOME}|'"${SKYTRACER_HOME}"'|g' /etc/nginx/sites-available/onionsite
-
-
 sudo service nginx restart

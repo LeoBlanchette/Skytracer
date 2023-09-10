@@ -1,7 +1,3 @@
-# Skytracer
-.skytracer_web
-.skytracer_web/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
