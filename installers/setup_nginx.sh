@@ -13,8 +13,9 @@ sudo cp -f $SKYTRACER_HOME/installers/configfiles/nginx-default /etc/nginx/sites
 
 sudo sed -i 's|{REPLACEONIONSITE}|'"${REPLACEONIONSITE}"'|g' /etc/nginx/sites-available/onionsite
 
-sudo sed -i 's|{REPLACEHOME}|'"${REPLACEHOME}"'|g' /etc/nginx/sites-available/onionsite
-
 sudo ln -s -f /etc/nginx/sites-available/onionsite /etc/nginx/sites-enabled/onionsite
+
+sudo chown $USER:www-data -R /var/www
+
 
 sudo service nginx restart
