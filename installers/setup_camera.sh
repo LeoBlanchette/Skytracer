@@ -2,6 +2,8 @@
 
 echo Setting up camera controller...
 
+source $SKYTRACER_HOME/bin/./activate
+
 REPLACEPYTHON=$(which python)
 
 REPLACESCRIPT=$SKYTRACER_HOME/skytracer/camera/skycam.py
